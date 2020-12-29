@@ -1,12 +1,12 @@
-build :
+build:
 	docker-compose up --build
 
-run :
+run:
 	docker-compose up
 
-down :
+down:
 	docker-compose down --remove-orphans
 
-prettier :
+prettier:
 	cd frontend && npx prettier --write .
 	cd frontend && npm run lint -- --fix
